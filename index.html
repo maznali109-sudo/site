@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>اسم موقعك</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo&family=Aref+Ruqaa&family=Amiri&display=swap" rel="stylesheet">
+
+<style>
+body {
+margin:0;
+direction:rtl;
+background:
+radial-gradient(circle at 20% 20%, rgba(0,0,0,0.03), transparent 40%),
+radial-gradient(circle at 80% 60%, rgba(0,0,0,0.025), transparent 40%),
+linear-gradient(135deg,#f5f5f5,#e6e6e6);
+background-attachment: fixed;
+}
+
+/* الشريط الأسود */
+header{
+background:black;
+color:white;
+padding:15px 20px;
+text-align:right;
+font-size:22px;
+font-family:'Aref Ruqaa', serif;
+}
+
+/* الاشعار */
+.popup{
+position:fixed;
+top:0;
+right:0;
+left:0;
+bottom:0;
+background:rgba(0,0,0,0.55);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.popup-box{
+background:white;
+padding:35px;
+border-radius:14px;
+width:320px;
+text-align:center;
+font-family:'Cairo', sans-serif;
+}
+
+.popup-box button{
+margin-top:15px;
+padding:10px 20px;
+background:black;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-family:'Cairo', sans-serif;
+}
+
+/* عنوان القصيدة */
+.poem-title{
+text-align:center;
+font-family:'Amiri', serif;
+font-size:36px;
+margin-top:40px;
+margin-bottom:25px;
+}
+
+/* الشعر */
+.poem{
+font-family:'Amiri', serif;
+font-size:26px;
+line-height:2.4;
+max-width:850px;
+margin:auto;
+padding:20px;
+}
+
+.verse{
+display:flex;
+justify-content:space-between;
+margin-bottom:6px;
+}
+
+.verse span:first-child{
+width:48%;
+text-align:right;
+}
+
+.verse span:last-child{
+width:48%;
+text-align:left;
+}
+</style>
+</head>
+
+<body>
+
+<div class="popup" id="popup">
+<div class="popup-box">
+<h2>Happy 22nd birthdayyy 🎉🤍</h2>
+<p>   كل عام وانا احبك اكثر من العام 
+            كل عام وانتي حبيبتي وبجنبي
+</p>
+<button onclick="closePopup()">الانتقال للأجمل</button>
+</div>
+</div>
+
+<header>
+دِيوَانُ رِيمَاسٍ
+</header>
+
+<h1 class="poem-title">“مِيلادُكِ فَلَكًا يَحدُثُ مَرَّةً”</h1>
+
+<div class="poem">
+
+<!-- 1 -->
+<div class="verse"><span>ميلادُكِ فَلَكًا يحدُثْ مرّةً
+</span><span>وفيهِ خُلِقَتْ أجمَلُ امرأةً
+</span></div>
+<!-- 2 -->
+<div class="verse"><span>ميلادُكِ يومًا وبعينيَّ سِنةً
+</span><span>وما غيرُكِ بيومِ ميلادِكِ حسنةً
+</span></div>
+<!-- 3 -->
+<div class="verse"><span>أنتِ البهاءُ إذا أتى في خافقي
+</span><span>وأنتِ السَّنَا إن ضاقَ صدري بهجتَهْ
+</span></div>
+<!-- 4 -->
+<div class="verse"><span>في قربِكِ الدنيا تَصيرُ مُضيئةً
+</span><span>وتغدو حياتي في حضورِكِ زينةً
+</span></div>
+<!-- 5 -->
+<div class="verse"><span>إن غِبتِ عنّي ضاعَ منّي توازني
+</span><span>وإذا حضرتِ عادَ قلبي طمأنينةً
+</span></div>
+<!-- 6 -->
+<div class="verse"><span>يا نغمةً سكنتْ تفاصيلَ الهوى
+</span><span>وجعلتِ أيّامي معكِ مُطمئنةً
+</span></div>
+<!-- 7 -->
+<div class="verse"><span>لا شيءَ يُشبهُكِ… ولا يكفي المدى
+</span><span>كي يصفَ إحساسي إليكِ مَحبّةً
+</span></div>
+<!-- 8 -->
+<div class="verse"><span>فكُلَّ عامٍ وأنتِ نورُ حكايتي
+</span><span>وكُلَّ عامٍ أنتِ لي أجملُ هِبّةً</span></div>
+
+</div>
+
+<script>
+function closePopup(){
+document.getElementById("popup").style.display="none";
+}
+</script>
+
+</body>
+</html>
